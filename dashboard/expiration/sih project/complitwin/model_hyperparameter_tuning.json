@@ -1,0 +1,116 @@
+{
+  "model_architecture": "MobileNetV3-Small",
+  "hyperparameter_grid": {
+    "learning_rate": {
+      "tested_values": [
+        0.0001,
+        0.0002,
+        0.0005
+      ],
+      "optimal_value": 0.0002,
+      "rationale": "2e-4 provides the fastest convergence without oscillating around the loss surface on fine-tuning weights."
+    },
+    "label_smoothing": {
+      "tested_values": [
+        0.0,
+        0.05,
+        0.1
+      ],
+      "optimal_value": 0.05,
+      "rationale": "0.05 mitigates overconfidence on synthesized date stamp artifacts and boundary defects."
+    },
+    "dropout_rate": {
+      "tested_values": [
+        0.1,
+        0.2,
+        0.3
+      ],
+      "optimal_value": 0.2,
+      "rationale": "0.2 prevents co-adaptation of features in the classification head while preserving low-level edge features."
+    },
+    "weight_decay": {
+      "tested_values": [
+        0.0001,
+        0.001,
+        0.005
+      ],
+      "optimal_value": 0.001,
+      "rationale": "L2 regularization 1e-3 keeps weight norms bounded and improves out-of-distribution generalization."
+    },
+    "lr_scheduler": {
+      "type": "CosineAnnealingLR",
+      "T_max": 15,
+      "eta_min": 1e-06,
+      "rationale": "Smooth decay enables deep local minima exploration in late training epochs."
+    }
+  },
+  "active_checkpoint_performance": {
+    "dataset_classes": [
+      "bloated_gas",
+      "discolored_spoilage",
+      "normal_sealed",
+      "tampered_label"
+    ],
+    "class_to_idx": {
+      "bloated_gas": 0,
+      "discolored_spoilage": 1,
+      "normal_sealed": 2,
+      "tampered_label": 3
+    },
+    "total_eval_samples": 226,
+    "overall_accuracy_pct": 92.48,
+    "macro_f1_score": 0.9269,
+    "confusion_matrix": [
+      [
+        51,
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        49,
+        4,
+        1
+      ],
+      [
+        0,
+        2,
+        61,
+        1
+      ],
+      [
+        0,
+        0,
+        6,
+        48
+      ]
+    ],
+    "class_metrics": {
+      "bloated_gas": {
+        "support": 54,
+        "precision": 1.0,
+        "recall": 0.9444,
+        "f1_score": 0.9714
+      },
+      "discolored_spoilage": {
+        "support": 54,
+        "precision": 0.9608,
+        "recall": 0.9074,
+        "f1_score": 0.9333
+      },
+      "normal_sealed": {
+        "support": 64,
+        "precision": 0.8472,
+        "recall": 0.9531,
+        "f1_score": 0.8971
+      },
+      "tampered_label": {
+        "support": 54,
+        "precision": 0.9231,
+        "recall": 0.8889,
+        "f1_score": 0.9057
+      }
+    }
+  }
+}

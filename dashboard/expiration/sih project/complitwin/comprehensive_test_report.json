@@ -1,0 +1,65 @@
+{
+  "vision_classifier": {
+    "status": "PASSED",
+    "total_samples": 40,
+    "accuracy_pct": 90.0,
+    "avg_latency_ms": 6.54,
+    "class_breakdown": {
+      "bloated_gas": {
+        "total": 10,
+        "correct": 8
+      },
+      "discolored_spoilage": {
+        "total": 10,
+        "correct": 9
+      },
+      "normal_sealed": {
+        "total": 10,
+        "correct": 9
+      },
+      "tampered_label": {
+        "total": 10,
+        "correct": 10
+      }
+    }
+  },
+  "ocr_date_engine": {
+    "status": "PASSED",
+    "total_test_dates": 5,
+    "recognized": 5,
+    "accuracy_pct": 100.0
+  },
+  "ingredients_decoder": {
+    "status": "PASSED",
+    "hazardous_detection": true,
+    "allergens_detected": [
+      "Gluten / Wheat",
+      "Milk / Dairy",
+      "Soybeans"
+    ],
+    "total_additives": 1,
+    "health_score": 100
+  },
+  "regulations_engine": {
+    "status": "PASSED",
+    "compliant_checks_count": 6,
+    "compliant_violations": 0,
+    "violation_detected_correctly": true
+  },
+  "backend_api": {
+    "status": "PASSED",
+    "endpoints": {
+      "/api/products": {
+        "status_code": 200,
+        "latency_ms": 11.98,
+        "ok": true
+      },
+      "/api/inspect": {
+        "status_code": 200,
+        "latency_ms": 7736.9,
+        "ok": true,
+        "verdict": "BIOLOGICAL_SPOILAGE"
+      }
+    }
+  }
+}

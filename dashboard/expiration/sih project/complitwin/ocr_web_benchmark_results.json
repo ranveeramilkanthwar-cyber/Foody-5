@@ -1,0 +1,161 @@
+{
+  "samples_evaluated": 10,
+  "total_words_extracted": 388,
+  "average_latency_ms": 735.4,
+  "total_benchmark_time_sec": 7.35,
+  "items": [
+    {
+      "index": 1,
+      "product_name": "Fromage Blanc Nature",
+      "category": "dairies",
+      "image_file": "web_ocr_dairies_6111246721261_ingredients.jpg",
+      "ocr_lines_count": 29,
+      "word_count": 51,
+      "detected_additives": [],
+      "ground_truth_additives": [
+        "en:e202"
+      ],
+      "safety_score": 100,
+      "latency_ms": 1017.6,
+      "text_sample": "Tableau Nutritionnel (pour 10Og) Element Valeur Analyse Energie 159 Kcal Eleve pour un produit 662 k"
+    },
+    {
+      "index": 2,
+      "product_name": "Perly",
+      "category": "dairies",
+      "image_file": "web_ocr_dairies_6111242100992_ingredients.jpg",
+      "ocr_lines_count": 18,
+      "word_count": 23,
+      "detected_additives": [],
+      "ground_truth_additives": [],
+      "safety_score": 100,
+      "latency_ms": 779.3,
+      "text_sample": "ssbus Fromoge  Sucro tioojiwa Voleurs nutritionneles pou Ioda Vdkcuncacniava KdMJKS Protnan 80 Corbo"
+    },
+    {
+      "index": 3,
+      "product_name": "Lait frais naturel demi \u00e9cr\u00e9m\u00e9",
+      "category": "dairies",
+      "image_file": "web_ocr_dairies_6111266962187_ingredients.jpg",
+      "ocr_lines_count": 21,
+      "word_count": 50,
+      "detected_additives": [],
+      "ground_truth_additives": [],
+      "safety_score": 100,
+      "latency_ms": 981.2,
+      "text_sample": "Calclum mg 122 potutsi Sendsen8 iHL \"Sae Vet ani tal in Mauta : clla hantolenb: Ult abentue oan tote"
+    },
+    {
+      "index": 4,
+      "product_name": "Jben",
+      "category": "dairies",
+      "image_file": "web_ocr_dairies_6111242106949_ingredients.jpg",
+      "ocr_lines_count": 6,
+      "word_count": 8,
+      "detected_additives": [],
+      "ground_truth_additives": [
+        "en:e407"
+      ],
+      "safety_score": 100,
+      "latency_ms": 461.2,
+      "text_sample": "Are Tartin Jaouda) jben Cutstn t ((00%a Frais)"
+    },
+    {
+      "index": 5,
+      "product_name": "uht jaouda 1L",
+      "category": "dairies",
+      "image_file": "web_ocr_dairies_6111242101180_ingredients.jpg",
+      "ocr_lines_count": 8,
+      "word_count": 51,
+      "detected_additives": [],
+      "ground_truth_additives": [],
+      "safety_score": 100,
+      "latency_ms": 500.0,
+      "text_sample": "Le lait UHT Jaouda ne contient pas de conservateurs. sile lait UHT se conserve a temperature ambiant"
+    },
+    {
+      "index": 6,
+      "product_name": "Product_6111242100985",
+      "category": "dairies",
+      "image_file": "web_ocr_dairies_6111242100985_ingredients.jpg",
+      "ocr_lines_count": 28,
+      "word_count": 42,
+      "detected_additives": [
+        "100"
+      ],
+      "ground_truth_additives": [],
+      "safety_score": 100,
+      "latency_ms": 927.9,
+      "text_sample": "04b Ujb04 Fromage frais nature E100 J iMiill iatall nutrilionnelles 10Og energetiques Kcal J01 JLS 3"
+    },
+    {
+      "index": 7,
+      "product_name": "Prince",
+      "category": "biscuits",
+      "image_file": "web_ocr_biscuits_7622210449283_ingredients.jpg",
+      "ocr_lines_count": 17,
+      "word_count": 58,
+      "detected_additives": [],
+      "ground_truth_additives": [
+        "en:e322",
+        "en:e322i",
+        "en:e500",
+        "en:e503"
+      ],
+      "safety_score": 100,
+      "latency_ms": 810.6,
+      "text_sample": ")biscuits FourRES (35 PaRfum Cereale 50 @ane de BlE 34,8  farine E BLE complete 15,2 051,sudte Ondes"
+    },
+    {
+      "index": 8,
+      "product_name": "S\u00e9same",
+      "category": "biscuits",
+      "image_file": "web_ocr_biscuits_3175680011480_ingredients.jpg",
+      "ocr_lines_count": 18,
+      "word_count": 69,
+      "detected_additives": [],
+      "ground_truth_additives": [
+        "en:e322",
+        "en:e336",
+        "en:e500",
+        "en:e503"
+      ],
+      "safety_score": 100,
+      "latency_ms": 547.8,
+      "text_sample": "mhanesium INGREDIENTS Farine de ble 5788,sucre de canne roux, huile de colza, sesame toaste 10,63 ge"
+    },
+    {
+      "index": 9,
+      "product_name": "Tonik",
+      "category": "biscuits",
+      "image_file": "web_ocr_biscuits_6111031005064_ingredients.jpg",
+      "ocr_lines_count": 0,
+      "word_count": 0,
+      "detected_additives": [],
+      "ground_truth_additives": [
+        "en:e322",
+        "en:e500",
+        "en:e500ii"
+      ],
+      "safety_score": 100,
+      "latency_ms": 94.0,
+      "text_sample": ""
+    },
+    {
+      "index": 10,
+      "product_name": "Fourr\u00e9s Chocolat Noir",
+      "category": "biscuits",
+      "image_file": "web_ocr_biscuits_3229820100234_ingredients.jpg",
+      "ocr_lines_count": 21,
+      "word_count": 36,
+      "detected_additives": [],
+      "ground_truth_additives": [
+        "en:e414",
+        "en:e502"
+      ],
+      "safety_score": 100,
+      "latency_ms": 1234.9,
+      "text_sample": "BISCMS FovAKES CElls db Koennenna decAh chocolanhok FaeeeNerH Kenr;Abb 04 onzn\" AC ecadl AZ Gnan 0Ji"
+    }
+  ]
+}
