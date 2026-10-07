@@ -1,0 +1,47 @@
+# Model weights (too large for GitHub - download separately)
+models/*.pt
+models/*.pth
+
+# Backups and large archives (>100MB)
+dashboard/expiration/backups/
+*.zip
+*.MOV
+*.mp4
+
+# Dataset images (generated locally by generate_dataset.py)
+dataset/
+
+# Training checkpoints
+checkpoints/
+
+# Virtual environments
+**/.venv/
+**/venv/
+**/env/
+**/.env/
+
+# Logs and build artifacts
+**/.manus-logs/
+**/node_modules/
+dist/
+build/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# IDE
+.vscode/
+.idea/
+*.suo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
